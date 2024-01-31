@@ -497,14 +497,6 @@ svg#tr2 polygon.st3 {
 	fill: var(--color1);
 }
 
-svg .legend {
-	font-family: Arial, sans-serif;
-	font-size: 15px;
-	fill: #fff;
-	text-anchor: middle;
-	dominant-baseline: middle;
-}
-
 /* -- */
 /* .about__mid-7 {
 	padding-left: 80px;
