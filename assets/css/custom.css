@@ -13,6 +13,9 @@ body {
 	background: #121212;
 	font-family: 'Rubik', sans-serif;
 }
+body.articulos {
+	background-color: white;
+}
 html {
 	scroll-behavior: smooth;
 }
