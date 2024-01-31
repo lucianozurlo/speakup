@@ -1307,9 +1307,9 @@
     let portfolioline = gsap.timeline({
       scrollTrigger: {
         trigger: ".portfolio__area",
-        start: "top center-=400",
+        start: "top center-=200",
         pin: ".portfolio__text",
-        end: "bottom bottom+=80",
+        end: "bottom bottom+=200",
         markers: false,
         pinSpacing: false,
         scrub: 1,
@@ -1317,18 +1317,19 @@
     })
 
     portfolioline.to(".portfolio__text", {
-      scale: 2,
-      duration: 1
-    })
-    portfolioline.to(".portfolio__text", {
-      scale: 1.5,
+      scale: .5,
       opacity: .1,
-      duration: 2
+      duration: 11
     })
+    // portfolioline.to(".portfolio__text", {
+    //   scale: .5,
+    //   opacity: .1,
+    //   duration: 1
+    // })
     portfolioline.to(".portfolio__text", {
       scale: 0,
       opacity: 0,
-      duration: 2
+      duration: 5
     }, "+=2")
   }
 
@@ -3934,45 +3935,45 @@
 
 
   /////////////////////////////////////////////////
-  var range_slider = $("#slider-range");
+  // var range_slider = $("#slider-range");
 
-  if (range_slider) {
-    $("#slider-range").slider({
-      range: true,
-      min: 0,
-      max: 6000,
-      values: [0, 6000],
-      slide: function (event, ui) {
-        $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-      }
-    });
-    $("#amount").val(
-      "$" +
-      $("#slider-range").slider("values", 0) +
-      " - $" +
-      $("#slider-range").slider("values", 1)
-    );
-  }
+  // if (range_slider) {
+  //   $("#slider-range").slider({
+  //     range: true,
+  //     min: 0,
+  //     max: 6000,
+  //     values: [0, 6000],
+  //     slide: function (event, ui) {
+  //       $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+  //     }
+  //   });
+  //   $("#amount").val(
+  //     "$" +
+  //     $("#slider-range").slider("values", 0) +
+  //     " - $" +
+  //     $("#slider-range").slider("values", 1)
+  //   );
+  // }
   /////////////////////////////////////////////////
 
 
   /////////////////////////////////////////////////
   //
-  $("#slider_range_2").slider({
-    range: true,
-    min: 0,
-    max: 6000,
-    values: [0, 6000],
-    slide: function (event, ui) {
-      $("#amount_2").val("$" + ui.values[0] + " - $" + ui.values[1]);
-    }
-  });
-  $("#amount_2").val(
-    "$" +
-    $("#slider_range_2").slider("values", 0) +
-    " - $" +
-    $("#slider_range_2").slider("values", 1)
-  );
+  // $("#slider_range_2").slider({
+  //   range: true,
+  //   min: 0,
+  //   max: 6000,
+  //   values: [0, 6000],
+  //   slide: function (event, ui) {
+  //     $("#amount_2").val("$" + ui.values[0] + " - $" + ui.values[1]);
+  //   }
+  // });
+  // $("#amount_2").val(
+  //   "$" +
+  //   $("#slider_range_2").slider("values", 0) +
+  //   " - $" +
+  //   $("#slider_range_2").slider("values", 1)
+  // );
   /////////////////////////////////////////////////
 
 
