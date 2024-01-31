@@ -892,3 +892,6 @@ height: calc(100vh - 90px);
 .blog__btn {
 	text-transform: none;
 }
+.team__member-img {
+    left: 0;
+}
