@@ -235,25 +235,12 @@ html {
 .service__area-3 .sec-title-wrapper ul {
 	width: 500px;
 }
-.blog__detail-content ul li::before {
-	bottom: 6px;
-}
-.blog__detail-content ul li:first-child {
-	padding-left: 0;
-	font-style: italic;
-}
-.blog__detail-content ul li:first-child:before {
-	content: '';
-}
 .service__area-3 .sec-sub-title {
 	padding-top: 0;
 }
 .sec-title.d-inline-block div,
 .sec-title.d-inline-block span {
 	display: inline-block !important;
-}
-.blog__detail-content ul li {
-	font-size: 24px;
 }
 .shape {
 	bottom: -200px;
@@ -889,4 +876,31 @@ height: calc(100vh - 90px);
 }
 .team__member-img {
     left: 0;
+}
+.blog__title {
+	height: 85px;
+}
+.imagen-contenido {
+	margin: 15px 0 !important;
+}
+.comentario {
+	font-size: 15px !important;
+	font-style: italic;
+	padding-bottom: 35px !important;
+}
+
+body.articulos ul li {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-left: 20px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    list-style-type: disc !important;
+    color: var(--black-3);
+}
+body.articulos ul li::before {
+	content: '';
+}
+body.articulos ul li::marker {
+	left: 20px;
 }
