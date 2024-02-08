@@ -151,7 +151,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	border-radius: 100px;
-	transform: translate(30px, 14px);
+	transform: translate(30px, 5px);
 }
 
 
@@ -643,6 +643,12 @@ body.articulos .header__area-3 .header__inner-3 .main-menu-3,
 /* .header__area-3.sticky-3 a.link.white {
 	color: var(--black) !important;
 } */
+.main-menu-3 > li:nth-child(2) > a .menu-text span:nth-child(6),
+.main-menu-3 > li:nth-child(3) > a .menu-text span:nth-child(8),
+.main-menu-3 > li:nth-child(4) > a .menu-text span:nth-child(6),
+.main-menu-3 > li:nth-child(4) > a .menu-text span:nth-child(8) {
+	margin-right: 8px;
+}
 .header__area-3 {
 	width: 100%;
 }
@@ -837,7 +843,7 @@ body.articulos .blog__detail-date {
 .team__member-social {
     display: flex;
     flex-direction: row;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 .team__detail .work-title {
     font-weight: 300;
@@ -876,6 +882,14 @@ body.articulos .blog__detail-date {
 .team__item-7 .tm-name {
 	max-width: calc(100% - 30px);
 	font-size: 20px;
+	display: block;
+}
+.team__item-7 .tm-name span {
+    font-weight: 300;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
 .team__item-7 .tm-name,
 .team__item-7 .tm-role {
@@ -889,13 +903,19 @@ body.articulos .blog__detail-date {
     grid-template-columns: .8fr 1.2fr ;
 }
 .team__item-7 .tm-name::after {
-    left: 59px;
-    max-width: 15px;
-    top: 14px;
+	left: 58px;
+    max-width: 10px;
+    top: 12px;
 }
 .team__item-7 .tm-serial {
-    top: 15px;
+    top: 18px;
     font-size: 20px;
+	color: var(--color2);
+}
+
+.team__hover-7 {
+	width: 600px;
+    height: 400px;
 }
 
 .fade_bottom_3 .tm-name h3 {
@@ -906,6 +926,7 @@ body.articulos .blog__detail-date {
 }
 .team__member-img {
     left: 0;
+    height: calc(100vh - 7px);
 }
 .blog__title {
 	height: 85px;
@@ -933,4 +954,27 @@ body.articulos ul li::before {
 }
 body.articulos ul li::marker {
 	left: 20px;
+}
+.faq__list-6 .accordion-button {
+	padding-left: 60px;
+}
+.dark .faq__list-6 .accordion-item {
+	border-top: 0 !important;
+}
+.faq__list-6 .accordion-button.collapsed::after, .faq__list-6 .accordion-button:not(.collapsed)::after {
+    font-size: 30px;
+    top: 7px;
+	left: 10px;
+    right: unset;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.dark .faq__list .accordion-button, .dark .faq__list-3 .accordion-button, .dark .faq__list-6 .accordion-button {
+	color: var(--color2);
+	border-bottom: 1px dotted var(--color2);
+}
+.dark .faq__list .accordion-button.collapsed, .dark .faq__list-3 .accordion-button.collapsed, .dark .faq__list-6 .accordion-button.collapsed {
+	color: var(--white);
+	border-bottom: 1px dotted var(--white);
 }
