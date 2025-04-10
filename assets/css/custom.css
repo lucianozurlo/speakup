@@ -10,16 +10,15 @@
 	--color-grey: #ddd;
 }
 body {
-	background: #121212;
+	background-color: #121212;
 	font-family: 'Rubik', sans-serif;
 }
 body.articulos {
-	background-color: white;
+	background-color: #fff;
 }
 html {
 	scroll-behavior: smooth;
 }
-
 .alt-font {
 	font-family: 'Bodoni Moda', serif;
 }
@@ -59,6 +58,10 @@ html {
 .transform-unset {
 	text-transform: unset !important;
 }
+.fullheight {
+	height: 100vh;
+}
+
 .pt-50 {
 	padding-top: 50px !important;
 }
@@ -237,6 +240,16 @@ html {
 }
 .service__area-3 .sec-sub-title {
 	padding-top: 0;
+}
+.service__title-wrapper {
+    padding-right: 35px;
+}
+.service__title-wrapper .service__title {
+    font-size: 24px;
+}
+.service__img.active {
+    -webkit-transform: rotate(-5deg) translateX(60px) translateY(30px);
+    transform: rotate(-5deg) translateX(60px) translateY(30px);
 }
 .sec-title.d-inline-block div,
 .sec-title.d-inline-block span {
@@ -513,6 +526,9 @@ svg#tr2 polygon.st3 {
 	border-top: 2px dotted var(--white-4);
 	padding-top: 49px;
 }
+.team__member-name-7 {
+    font-size: 65px;
+}
 .team__items-7 a:first-child {
 	border-top: none;
 }
@@ -624,7 +640,9 @@ body.articulos .header__area-3 .header__inner-3 .main-menu-3,
 .main-menu-3 > li {
 	height: 100%;
 	transition: all 0.5s ease-in-out;
+	padding: 0 30px;
 }
+
 .main-menu-3 > li:last-child {
 	padding-right: 0;
 	margin-right: 0;
@@ -755,7 +773,7 @@ img.gris:hover {
 }
 body.articulos .sec-title {
 	font-weight: 400;
-	font-size: 46px;
+	font-size: 34px;
 }
 body.articulos .blog__detail-date {
 	color: var(--gray-2);
@@ -873,6 +891,9 @@ body.articulos .blog__detail-date {
 .footer__contact li a:hover {
     color: var(--color2);
 }
+body.articulos .footer__area.dark .footer__top {
+	background-color: #fff;
+}
 .team__items-7 .team__item-7{
     border-bottom: 1px dotted var(--gray-16);
 }
@@ -912,7 +933,6 @@ body.articulos .blog__detail-date {
     font-size: 20px;
 	color: var(--color2);
 }
-
 .team__hover-7 {
 	width: 600px;
     height: 400px;
@@ -926,7 +946,6 @@ body.articulos .blog__detail-date {
 }
 .team__member-img {
     left: 0;
-    height: calc(100vh - 7px);
 }
 .blog__title {
 	height: 85px;
@@ -940,7 +959,7 @@ body.articulos .blog__detail-date {
 	padding-bottom: 35px !important;
 }
 
-body.articulos ul li {
+body.articulos .blog__detail-content ul li {
     font-size: 18px;
     line-height: 1.4;
     margin-left: 20px;
@@ -949,10 +968,10 @@ body.articulos ul li {
     list-style-type: disc !important;
     color: var(--black-3);
 }
-body.articulos ul li::before {
+body.articulos .blog__detail-content ul li::before {
 	content: '';
 }
-body.articulos ul li::marker {
+body.articulos .blog__detail-content ul li::marker {
 	left: 20px;
 }
 .faq__list-6 .accordion-button {

@@ -16,127 +16,6 @@
     <link rel="stylesheet" href="assets/css/meanmenu.min.css" />
     <link rel="stylesheet" href="assets/css/master.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-    <style>
-        /* Base styles for the element that has a tooltip */
-        [data-tooltip],
-        .tooltip {
-            position: relative;
-            cursor: pointer;
-        }
-
-        /* Base styles for the entire tooltip */
-        [data-tooltip]:before,
-        [data-tooltip]:after,
-        .tooltip:before,
-        .tooltip:after {
-            position: absolute;
-            visibility: hidden;
-            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-            opacity: 0;
-            -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
-                -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-            -moz-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
-                -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-            transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
-                transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-            -webkit-transform: translate3d(0, 0, 0);
-            -moz-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            pointer-events: none;
-        }
-
-        /* Show the entire tooltip on hover and focus */
-        [data-tooltip]:hover:before,
-        [data-tooltip]:hover:after,
-        [data-tooltip]:focus:before,
-        [data-tooltip]:focus:after,
-        .tooltip:hover:before,
-        .tooltip:hover:after,
-        .tooltip:focus:before,
-        .tooltip:focus:after {
-            visibility: visible;
-            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-            opacity: 1;
-        }
-
-        /* Base styles for the tooltip's directional arrow */
-        .tooltip:before,
-        [data-tooltip]:before {
-            z-index: 1001;
-            border: 6px solid transparent;
-            background: transparent;
-            content: "";
-        }
-
-        /* Base styles for the tooltip's content area */
-        .tooltip:after,
-        [data-tooltip]:after {
-            z-index: 1000;
-            padding: 8px;
-            width: 160px;
-            background-color: #000;
-            background-color: var(--color2);
-            color: #fff;
-            content: attr(data-tooltip);
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 1.2;
-        }
-
-        /* Directions */
-
-        /* Top (default) */
-        [data-tooltip]:before,
-        [data-tooltip]:after,
-        .tooltip:before,
-        .tooltip:after {
-            bottom: 100%;
-            left: 50%;
-        }
-
-        [data-tooltip]:before,
-        .tooltip:before {
-            margin-left: -6px;
-            margin-bottom: -12px;
-            border-top-color: #000;
-            border-top-color: var(--color2);
-        }
-
-        /* Horizontally align top/bottom tooltips */
-        [data-tooltip]:after,
-        .tooltip:after {
-            margin-left: -80px;
-        }
-
-
-        /* Bottom */
-        .tooltip-bottom:before,
-        .tooltip-bottom:after {
-            top: 65%;
-            bottom: auto;
-            left: 50%;
-
-        }
-
-        .tooltip-bottom:before {
-            margin-top: -12px;
-            margin-bottom: 0;
-            border-top-color: transparent;
-            border-bottom-color: #000;
-            border-bottom-color: var(--color2);
-        }
-
-        .tooltip-bottom:hover:before,
-        .tooltip-bottom:hover:after,
-        .tooltip-bottom:focus:before,
-        .tooltip-bottom:focus:after {
-            -webkit-transform: translateY(12px);
-            -moz-transform: translateY(12px);
-            transform: translateY(12px);
-        }
-    </style>
 </head>
 
 <body>
@@ -180,8 +59,7 @@
                         <a href="#speakUp" class="link white">Speak<span>&#8203;</span>Up</a>
                     </li>
                     <li>
-                        <a href="#" class="link white tooltip-bottom"
-                            data-tooltip="¡Próximamente!">Podcast<span>&#8203;</span>Diversidad</a>
+                        <a href="#podcast" class="link white">Podcast<span>&#8203;</span>Diversidad</a>
                     </li>
                     <li>
                         <a href="#articulos"
@@ -465,39 +343,36 @@
                 <section class="team__detail" style="background-color: white;">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 offset-lg-0 offset-md-2">
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 offset-lg-0 offset-md-2 fullheight">
                                 <div class="team__member-img">
                                     <img src="assets/img/vir.jpg" class="gris" alt="Virginia" data-speed="0.5" />
                                 </div>
                             </div>
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 fullheight">
                                 <div class="sec-title-wrapper text-anim pt-120">
                                     <h2 class="team__member-name-7 animation__char_come">
-                                        ¡Hola!<br />
-                                        soy Virginia
+                                        ¡Hola! soy Virginia
                                     </h2>
                                     <h3 class="team__member-role-7 animation__char_come">
                                         Directora de <span>Speak Up</span>
                                     </h3>
-                                    <p>Hace más de 20 años estoy trabajando en temas de diversidad, cuando no era una
-                                        temática ni conocida, ni demanda por
-                                        parte de las organizaciones.</p>
-                                    <p>Desde diferentes lugares y necesidades acompaño a las organizaciones liderando
-                                        proyectos,
-                                        como consultora, profesora e investigadora trabajando también en la temática en
-                                        Iberoamérica en empresas de diferentes
-                                        rubros. Fui auditora de empresas en el Premio Ganar Ganar: de ONU Mujeres
-                                        Argentina & OIT” Argentina & Chile.</p>
-                                    <p>Soy Directora del Diplomado Ejecutivo Gestión Estratégica en Diversidad e
-                                        Inclusión en UCEMA y del Programa Diversidad
-                                        en Acción para HRBP. También soy Profesora en la Maestría de RR.HH. en
-                                        Universidad de San Andrés y Universidad Blas
-                                        Pascal y en el Diplomado Gestión Estratégica del Talento en UNSAM.</p>
-                                    <p>Miembro del International Network on Leave Policies & Research y Miembro de GEDIS
-                                        – Grupo de Estudios sobre
-                                        Discriminación – FLACSO.</p>
-                                    <p class="pb-10">Doctorada en Sociología y Maestranda en Ciencia Política y
-                                        Sociología.</p>
+                                    <p>Desde hace más de 20 años, trabajo en el ámbito de la diversidad, cuando aún no
+                                        era una temática reconocida ni demandada
+                                        por las organizaciones en Argentina.</p>
+                                    <p>Lideré proyectos y trabajé como consultora, profesora e investigadora, abordando
+                                        la diversidad en empresas de diversos
+                                        sectores en Iberoamérica. Audité empresas en el Premio Ganar Ganar de ONU
+                                        Mujeres Argentina y OIT en Argentina y Chile.</p>
+                                    <p>Actualmente, soy directora del Diplomado Ejecutivo en Gestión Estratégica de
+                                        Diversidad e Inclusión en UCEMA y del
+                                        Programa Diversidad en Acción para HRBP. También imparto clases en la Maestría
+                                        de RR.HH. en la Universidad de San Andrés
+                                        y la Universidad Blas Pascal, así como en el Diplomado en Gestión Estratégica
+                                        del Talento en UNSAM.</p>
+                                    <p class="pb-10">Formo parte del International Network on Leave Policies & Research
+                                        y soy miembro de GEDIS (Grupo de Estudios sobre
+                                        Discriminación) en FLACSO. Obtuve un doctorado en Sociología y completé una
+                                        maestría en Ciencia Política y Sociología.</p>
                                 </div>
                                 <!-- 
                                 <div class="text-anim">
@@ -2322,6 +2197,135 @@
                 </section>
                 <!-- Empresas end -->
 
+                <!-- Podcast start -->
+                <section id="podcast" class="service__area pt-110 pb-150">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                                <div class="sec-title-wrapper wrap">
+                                    <h2 class="sec-sub-title title-anim">Podcast</h2>
+                                    <h3 class="sec-title title-anim">Speak Up<br>Diversidad</h3>
+                                </div>
+                            </div>
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                                <div class="service__top-text text-anim">
+                                    <p>Un espacio de reflexión y conexión con palabras como puentes hacia la diversidad,
+                                        equidad e inclusión.<br />Exploraremos las historias de autores que comparten
+                                        sus pensamientos y sueños a
+                                        través de la escritura, desafiando paradigmas para crear un espacio inclusivo
+                                        para todos.</p>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                                <div class="service__top-btn">
+                                    <div class="btn_wrapper">
+                                        <a href="https://open.spotify.com/show/1CHWA6wYpDclPb1X9CqNfO" target="_blank"
+                                            class="btn-item wc-btn-secondary btn-hover transform-unset"><span></span>
+                                            Todos los<br>episodios <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service__list-wrapper">
+                            <div class="row">
+                                <div class="col-xxl-4 col-xl-4 col-lg-0 col-md-0">
+                                    <div class="service__img-wrapper">
+                                        <img src="assets/img/podcast/01.jpg" alt="Episodio 1"
+                                            class="service__img img-1 active">
+                                        <img src="assets/img/podcast/02.jpg" alt="Episodio 2"
+                                            class="service__img img-2">
+                                        <img src="assets/img/podcast/prox.jpg" alt="Proximamente"
+                                            class="service__img img-3">
+                                        <img src="assets/img/podcast/prox.jpg" alt="Proximamente"
+                                            class="service__img img-4">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12">
+                                    <div class="service__list">
+                                        <a href="https://open.spotify.com/episode/3Wu0SKEKJvB4e78hzT45Da"
+                                            target="_blank">
+                                            <div class="service__item animation_home1_service" data-service="1">
+                                                <div class="service__number"><span>01</span></div>
+                                                <div class="service__title-wrapper">
+                                                    <h4 class="service__title">Emma Vallespinós autora del libro "No lo
+                                                        haré bien. Como aprendimos las mujeres a no confiar en nosotras
+                                                        mismas."</h4>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p>Cuántas veces sentiste que habías alcanzado algo de pura
+                                                        casualidad o que en realidad tu trabajo no era tan bueno para
+                                                        recibir esa felicitación. Poder identificar el síndrome de la
+                                                        impostora es un gran paso, pero no es suficiente.</p>
+                                                    <p>Junto a la periodista , vamos a transitar ese camino que viene
+                                                        desde temprana edad para entender que no estás sola en
+                                                        este camino.</p>
+                                                </div>
+                                                <div class="service__link">
+                                                    <p><i class="fa-solid fa-arrow-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="https://open.spotify.com/episode/1lCtvq81i60fzK5ueYfhKT"
+                                            target="_blank">
+                                            <div class="service__item animation_home1_service" data-service="2">
+                                                <div class="service__number"><span>02</span></div>
+                                                <div class="service__title-wrapper">
+                                                    <h4 class="service__title">Jaime Parada Hoyl: “Yo gay. Un relato
+                                                        personal sobre la homosexualidad en Chile”</h4>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p>Un relato en primera persona donde el activista y consultor en
+                                                        diversidad Jaime Parada Hoyl reconoce que la principal
+                                                        dificultad ha sido la de enfrentar al sistema de valores y
+                                                        creencias en el cual fue educado que es opuesto al que hoy
+                                                        defiende como causa y ética de vida.</p>
+                                                </div>
+                                                <div class="service__link">
+                                                    <p><i class="fa-solid fa-arrow-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="https://open.spotify.com/show/1CHWA6wYpDclPb1X9CqNfO" target="_blank">
+                                            <div class="service__item animation_home1_service" data-service="3">
+                                                <div class="service__number"><span>03</span></div>
+                                                <div class="service__title-wrapper">
+                                                    <h4 class="service__title">Próximamente</h4>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p></p>
+                                                </div>
+                                                <div class="service__link">
+                                                    <p><i class="fa-solid fa-arrow-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="https://open.spotify.com/show/1CHWA6wYpDclPb1X9CqNfO" target="_blank">
+                                            <div class="service__item animation_home1_service" data-service="4">
+                                                <div class="service__number"><span>04</span></div>
+                                                <div class="service__title-wrapper">
+                                                    <h4 class="service__title">Próximamente</h4>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p></p>
+                                                </div>
+                                                <div class="service__link">
+                                                    <p><i class="fa-solid fa-arrow-right"></i></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Podcast end -->
+
+
                 <!-- Artículos -->
                 <section id="articulos" class="bg-white">
                     <div class="blog__area-3 pb-140 blog__animation">
@@ -2458,10 +2462,10 @@
                             <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                                 <div class="contact__info">
                                     <ul>
-                                        <li><i class="fa-solid fa-phone white"></i><a href="tel:+(54911)45791573"> +54 9
-                                                11 4579-1573</a></li>
+                                        <!-- <li><i class="fa-solid fa-phone white"></i><a href="tel:+(54911)45791573"> +54 9
+                                                11 4579-1573</a></li> -->
                                         <li><i class="fa-solid fa-envelope white"></i><a
-                                                href="mailto:info@speakup.com">info@speakup.com</a></li>
+                                                href="mailto:info@speakup.com">com@speakupdiversidad.com</a></li>
                                         <!-- <li>
                                             <span>Av. Cabildo 146 Piso 4, CABA</span>
                                         </li> -->
@@ -2487,9 +2491,8 @@
                                         <div class="row g-3">
                                             <div class="col-12">
                                                 <div class="btn_wrapper">
-                                                    <button
-                                                        class="wc-btn-primary btn-hover btn-item"><span></span>Enviar <i
-                                                            class="fa-solid fa-arrow-right"></i></button>
+                                                    <button class="wc-btn-primary btn-hover btn-item"><span></span>
+                                                        Enviar <i class="fa-solid fa-arrow-right"></i></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -2540,12 +2543,13 @@
                                     <div class="footer__widget-2">
                                         <h2 class="footer__widget-title">Contenido</h2>
                                         <ul class="footer__link">
-                                            <li><a href="#home" class="link">Home</a></li>
-                                            <li><a href="#hablemos" class="link">Hablemos</a></li>
-                                            <li><a href="#speakUp" class="link">SpeakUp</a></li>
-                                            <li><a href="#lineaDeTiempo" class="link">Línea de tiempo</a></li>
-                                            <li><a href="#articulos" class="link">Notas & Artículos</a></li>
-                                            <li><a href="#contacto" class="link">Contacto</a></li>
+                                            <li><a href="../#home">Home</a></li>
+                                            <li><a href="../#hablemos">Hablemos</a></li>
+                                            <li><a href="../#speakUp">Speak Up</a></li>
+                                            <li><a href="../#podcast">Podcast Diversidad</a>
+                                            <li><a href="../#articulos">Notas & Artículos</a>
+                                            </li>
+                                            <li><a href="../#contacto">Contacto</a></li>
                                         </ul>
                                     </div>
 
@@ -2553,8 +2557,8 @@
                                         <h2 class="footer__widget-title">Contacto</h2>
                                         <ul class="footer__contact">
                                             <!-- <li>Av. Cabildo 146 Piso 4, CABA</li> -->
-                                            <li><a href="tel:+(54911)45791573">+54 9 11 4579-1573</a></li>
-                                            <li><a href="mailto:info@speakup.com">info@speakup.com</a></li>
+                                            <!-- <li><a href="tel:+(54911)45791573">+54 9 11 4579-1573</a></li> -->
+                                            <li><a href="mailto:com@speakupdiversidad.com">com@speakupdiversidad.com</a>
                                         </ul>
                                     </div>
 
@@ -2588,13 +2592,6 @@
             <!-- Footer end -->
         </div>
     </div>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script>
-        tippy('#proximamente', {
-            content: "Proximamente",
-        });
-    </script>
     <script>
         // Smooth scroll function with offset
         function smoothScroll(target, offset) {
