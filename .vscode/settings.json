@@ -2,11 +2,15 @@
   "workbench.colorCustomizations": {
     "activityBar.hoverBackground": "#409e5650",
     "activityBar.foreground": "#409e56",
+    "activityBarBadge.background": "#409e56",
+    "activityBar.activeBorder": "#409e56",
     "titleBar.activeBackground": "#409e56",
     "titleBar.activeForeground": "#fff",
     "statusBar.background": "#409e5650",
     "statusBar.foreground": "#fff",
-    "statusBarItem.hoverBackground": "#409e56"
+    "statusBarItem.hoverBackground": "#409e56",
+    "statusBarItem.remoteBackground": "#409e56",
+    "tab.activeBorderTop": "#409e56"
   },
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5111
 }

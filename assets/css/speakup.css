@@ -476,6 +476,10 @@ svg polygon {
   filter: opacity(0.8);
   transition: -webkit-filter 0.3s ease-in-out;
   transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  transition:
+    filter 0.3s ease-in-out,
+    -webkit-filter 0.3s ease-in-out;
   transition:
     filter 0.3s ease-in-out,
     -webkit-filter 0.3s ease-in-out;
@@ -885,6 +889,10 @@ img.gris {
   filter: grayscale(1);
   transition: -webkit-filter 0.3s ease-in-out;
   transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  transition:
+    filter 0.3s ease-in-out,
+    -webkit-filter 0.3s ease-in-out;
   transition:
     filter 0.3s ease-in-out,
     -webkit-filter 0.3s ease-in-out;
